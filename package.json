@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "gatsby-lighthouse",
+  "description": "Gatsby Lighthouse Tests",
+  "version": "0.0.1",
+  "author": "Ivan Storck <ivanoats@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/ivanoats/gatsby-lighthouse/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.0",
@@ -42,10 +42,9 @@
     "lighthouse": "^3.2.0",
     "mime": "^2.3.1",
     "prettier": "^1.14.2",
-    "serve-handler": "^5.0.5",
-    "shelljs": "^0.8.2"
+    "serve-handler": "^5.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/ivanoats/gatsby-lighthouse#readme",
   "keywords": [
     "gatsby"
   ],
@@ -53,12 +52,12 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/ivanoats/gatsby-lighthouse.git"
   },
   "scripts": {
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/test-server",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
