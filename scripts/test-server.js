@@ -1,6 +1,7 @@
 const simpleServer = require('./simpleServer')
 const lighthouse = require('lighthouse')
 const chromeLauncher = require('chrome-launcher')
+const fs = require('fs')
 
 simpleServer.serve()
 
@@ -29,5 +30,6 @@ launchChromeAndRunLighthouse(
 ).then(results => {
   // check for desired results
   console.log(`Overall performance: ${results.categories.performance.score}`)
+  fs.writeFileSync('tmp/lighthouse.json', JSON.stringify(results, null, 2))
   simpleServer.stop()
 })
